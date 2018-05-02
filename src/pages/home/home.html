@@ -1,17 +1,92 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+
+  <ion-navbar color="">
+    <ion-title>Name For This Produk</ion-title>
   </ion-navbar>
+
 </ion-header>
 
+
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <ion-item>
+    <ion-avatar item-start>
+      <!-- <ion-icon name="contact"></ion-icon> -->
+      <img src="../../assets/imgs/user.png">
+    </ion-avatar>
+    <h2>Alvantesha Priliandi</h2>
+    <button ion-button clear icon-start>
+      <i class="fa fa-diamond" aria-hidden="true"></i>
+      &nbsp; 200 Poin
+    </button>
+    <button ion-button clear icon-start>
+        <i class="fa fa-money"></i>&nbsp;
+        Saldo belum ada
+      </button>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-col col-6>
+        <ion-card (click)="page()" id="hai">
+            <ion-card-header>
+                <img src="../../assets/imgs/product.png">
+            </ion-card-header>
+            <ion-card-content>
+              <p align="center">Product A</p>
+            </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="page()" id="hai">
+            <ion-card-header>
+                <img src="../../assets/imgs/product.png">
+            </ion-card-header>
+            <ion-card-content>
+              <p align="center">Product B</p>
+            </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="page()" id="hai">
+            <ion-card-header>
+                <img src="../../assets/imgs/product.png">
+            </ion-card-header>
+            <ion-card-content>
+              <p align="center">Product C</p>
+            </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-6>
+        <ion-card (click)="page()" id="hai">
+            <ion-card-header>
+                <img src="../../assets/imgs/product.png">
+            </ion-card-header>
+            <ion-card-content>
+              <p align="center">Product C</p>
+            </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+  
 </ion-content>
