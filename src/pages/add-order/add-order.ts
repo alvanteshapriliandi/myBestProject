@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AddOrderPage } from '../add-order/add-order';
+import { LoginPage } from '../login/login'
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the AddOrderPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +11,20 @@ import { AddOrderPage } from '../add-order/add-order';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-add-order',
+  templateUrl: 'add-order.html',
 })
-export class HomePage {
+export class AddOrderPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad AddOrderPage');
   }
 
-  page() {
-    this.navCtrl.push(AddOrderPage);
+  Login() {
+    this.navCtrl.push(LoginPage);
   }
 
 }

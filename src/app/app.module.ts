@@ -11,6 +11,10 @@ import { ChatPage } from '../pages/chat/chat';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { AddOrderPage } from '../pages/add-order/add-order';
+import { LoginPage } from "../pages/login/login";
+import { OrderPage } from "../pages/order/order";
+import { DetailorderPage } from "../pages/detailorder/detailorder";
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     TabsPage,
-    ChatPage
+    ChatPage,
+    AddOrderPage,
+    LoginPage,
+    OrderPage,
+    DetailorderPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +40,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     ChatPage,
-    TabsPage
+    TabsPage,
+    AddOrderPage,
+    LoginPage,
+    OrderPage,
+    DetailorderPage
   ],
   providers: [
     StatusBar,
