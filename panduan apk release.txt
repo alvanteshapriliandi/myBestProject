@@ -1,5 +1,5 @@
 1. ionic cordova build --release android
 2. keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
-3. arsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore D:\android\myBestProject\my-release-key.keystore app-release-unsigned.apk alias_name
+3. jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore D:\android\myBestProject\my-release-key.keystore app-release-unsigned.apk alias_name
 4. masuk ke android sdk
 C:\Users\user\AppData\Local\Android\Sdk\build-tools\21.0.0>zipalign -v 4 D:\android\myBestProject\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk D:\android\myBestProject\platforms\android\app\build\outputs\apk\release\myBestProject3.apk

@@ -23,7 +23,7 @@ export class HomePage {
     console.log('ionViewDidLoad HomePage');
   }
 
-  page() {
+  checkSchedule() {
     this.navCtrl.push(AddOrderPage);
   }
 
