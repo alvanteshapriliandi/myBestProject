@@ -12,18 +12,19 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-start>
+    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item, facilitation)" icon-start>
       <ion-grid>
         <ion-row>
-          <ion-col col-4>
-            <img [src]="item.url" alt="" width="100">
+          <ion-col col-6>
+            <img [src]="item.url" alt="" width="50" style="margin: 0;"><br>
+            <span style="font-size: 14px; font-weight: bold;">{{ item.title }}</span><br>
+            <ion-icon name="plane"></ion-icon><span style="font-size: 12px;">{{item.time}}</span><br>
+            <ion-icon name="calendar"></ion-icon><span style="font-size: 12px;">{{item.date}}</span><br>
           </ion-col>
-          <ion-col col-8>
-            {{ item.title }}<br>
-            Keberangkatan : {{item.time}} <br>
-            Masa Manasik  : {{item.time_manasik}}<br>
+          <ion-col col-6>
             <span style="color: orange;">Rp {{item.price}}</span><sub>/org</sub><br>
             {{item.poin}}
+
           </ion-col>
         </ion-row>
       </ion-grid>
