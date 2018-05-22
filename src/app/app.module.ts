@@ -12,11 +12,17 @@ import { ChatPage } from '../pages/chat/chat';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AddOrderPage } from '../pages/add-order/add-order';
+<<<<<<< HEAD
 import { PanduanPage } from '../pages/panduan/panduan';
 import { LoginPage } from "../pages/login/login";
 import { OrderPage } from "../pages/order/order";
 import { DetailorderPage } from "../pages/detailorder/detailorder";
 import { CekjadwalPage } from "../pages/cekjadwal/cekjadwal";
+=======
+import { LoginPage } from "../pages/login/login";
+import { OrderPage } from "../pages/order/order";
+import { DetailorderPage } from "../pages/detailorder/detailorder";
+>>>>>>> fa2a1f6badf48e5c4d1cc1b4561bc203a1e78e1c
 
 @NgModule({
   declarations: [
@@ -29,9 +35,13 @@ import { CekjadwalPage } from "../pages/cekjadwal/cekjadwal";
     AddOrderPage,
     LoginPage,
     OrderPage,
+<<<<<<< HEAD
     DetailorderPage,
     CekjadwalPage,
     PanduanPage
+=======
+    DetailorderPage
+>>>>>>> fa2a1f6badf48e5c4d1cc1b4561bc203a1e78e1c
   ],
   imports: [
     BrowserModule,
@@ -48,9 +58,13 @@ import { CekjadwalPage } from "../pages/cekjadwal/cekjadwal";
     AddOrderPage,
     LoginPage,
     OrderPage,
+<<<<<<< HEAD
     DetailorderPage,
     CekjadwalPage,
     PanduanPage
+=======
+    DetailorderPage
+>>>>>>> fa2a1f6badf48e5c4d1cc1b4561bc203a1e78e1c
   ],
   providers: [
     StatusBar,
