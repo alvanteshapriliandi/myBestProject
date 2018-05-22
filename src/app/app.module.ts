@@ -16,6 +16,7 @@ import { PanduanPage } from '../pages/panduan/panduan';
 import { LoginPage } from "../pages/login/login";
 import { OrderPage } from "../pages/order/order";
 import { DetailorderPage } from "../pages/detailorder/detailorder";
+import { CekjadwalPage } from "../pages/cekjadwal/cekjadwal";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { DetailorderPage } from "../pages/detailorder/detailorder";
     AddOrderPage,
     LoginPage,
     OrderPage,
-    DetailorderPage
+    DetailorderPage,
+    CekjadwalPage,
+    PanduanPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,9 @@ import { DetailorderPage } from "../pages/detailorder/detailorder";
     AddOrderPage,
     LoginPage,
     OrderPage,
-    DetailorderPage
+    DetailorderPage,
+    CekjadwalPage,
+    PanduanPage
   ],
   providers: [
     StatusBar,
