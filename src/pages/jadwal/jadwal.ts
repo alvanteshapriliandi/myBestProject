@@ -118,18 +118,10 @@ export class JadwalPage {
         'color': '#000'
       },
     ]
-    this.facilitation [
-      {
-        'id' : '1'
-      },
-      {
-        'id' : '2'
-      }
-    ]
   }
 
-  openNavDetailsPage(item, facilitation) {
-    this.navCtrl.push(DetailJadwalPage, {item: item, facilitation: facilitation });
+  openNavDetailsPage(item) {
+    this.navCtrl.push(DetailJadwalPage, {item: item});
   }
 
   ionViewDidLoad() {

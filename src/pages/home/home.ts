@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController, ModalController, ViewController   } from 'ionic-angular';
 import { AddOrderPage } from '../add-order/add-order';
 import { PanduanPage } from '../panduan/panduan';
 import { CekjadwalPage } from '../cekjadwal/cekjadwal';
@@ -17,7 +17,8 @@ import { CekjadwalPage } from '../cekjadwal/cekjadwal';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController, public modalCtrl: ModalController, 
+    public viewCtrl: ViewController) {
   }
 
   ionViewDidLoad() {
@@ -27,4 +28,11 @@ export class HomePage {
   cekjadwal() {
     this.navCtrl.push(CekjadwalPage);
   }
+
+  openModal(){
+    let modal = this.modalCtrl.create(AddOrderPage);
+    modal.present();
+  }
+
+  
 }

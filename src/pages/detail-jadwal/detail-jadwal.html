@@ -7,25 +7,77 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      {{ item.title }}
+      Detail Travel
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-slides pager style="height: 35%;">
-
-      <ion-slide style="background-color: green">
+<ion-content>
+  <ion-slides pager style="height: 35%; width: 100%">
+      <ion-slide style="background-color: white">
         <img src="https://i.ytimg.com/vi/IQMAhXJl27Q/maxresdefault.jpg" alt="">
       </ion-slide>
     
-      <ion-slide style="background-color: blue">
+      <ion-slide style="background-color: white">
         <img src="https://i.ytimg.com/vi/IQMAhXJl27Q/maxresdefault.jpg" alt="">
       </ion-slide>
     
-      <ion-slide style="background-color: red">
+      <ion-slide style="background-color: white">
         <img src="https://i.ytimg.com/vi/IQMAhXJl27Q/maxresdefault.jpg" alt="">
       </ion-slide>
-    
   </ion-slides>
+  
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://bizfold.com/wp-content/uploads/2017/09/5-pasti-umroh.png">
+      </ion-avatar>
+      <h2>{{ item.title }}</h2>
+      <p>Member sejak, November 5, 1955</p>
+    </ion-item>
+
+    <ion-card-content>
+      <p style="text-align: justify;">Kami adalah travel umrah yang sudah memberangkatkan para jama'ah umrah sebanyak 500 orang dan travel kami memberikan fasilitas yang dapat medukung ibadah para jama'ah.</p>
+    </ion-card-content>
+
+    <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small color="danger">
+            <ion-icon name="md-heart"></ion-icon>
+            <div>Favorite</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+              <ion-icon name="md-eye"></ion-icon>
+            <div>ulasan</div>
+          </button>
+        </ion-col>
+      </ion-row>
+
+  </ion-card>
+
+  <form (submit)="doSubmit($event)" [formGroup]="langForm">
+      <ion-list radio-group formControlName="langs">
+  
+        <ion-list-header>
+          Pilih Paket Umrah
+        </ion-list-header>
+  
+        <ion-item>
+          <ion-label>Go</ion-label>
+          <ion-radio value="golang" checked="true"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Rust</ion-label>
+          <ion-radio value="rust"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Python</ion-label>
+          <ion-radio value="python"></ion-radio>
+        </ion-item>
+      </ion-list>
+  </form>
+
 </ion-content>
